@@ -5,7 +5,17 @@ import { CityComponent } from "./city.component";
 const routes: Routes = [
   {
     path:'',
-    component:CityComponent
+    component:CityComponent,
+    children:[
+      {
+        path: '',
+        redirectTo:'list-city',
+      },
+      {
+        path: 'list-city',
+        loadChildren:()=>import('./list-city/list-city.module').then((m)=>m.ListCityModule),
+      },
+    ]
   }
 ];
 

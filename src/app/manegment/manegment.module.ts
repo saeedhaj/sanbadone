@@ -9,11 +9,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatDialogModule} from '@angular/material/dialog';
 
 const MATERIAL_MODULE=[
   MatSidenavModule,
   MatButtonModule,
-  MatMenuModule
+  MatMenuModule,
+  MatDialogModule
 ];
 
 @NgModule({
