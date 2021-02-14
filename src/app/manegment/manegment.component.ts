@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManegmentComponent implements OnInit {
 
+  showFiller = false;
   constructor() { }
 
   ngOnInit(): void {
