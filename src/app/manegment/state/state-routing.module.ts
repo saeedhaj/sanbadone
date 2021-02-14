@@ -15,10 +15,10 @@ const routes: Routes = [
         path: 'list-state',
         loadChildren:()=>import('./list-state/list-state.module').then((m)=>m.ListStateModule),
       },
-      // {
-      //   path: 'add-city',
-      //   loadChildren:()=>import('./add-city/add-city.module').then((m)=>m.AddCityModule),
-      // },
+       {
+         path: 'add-state',
+         loadChildren:()=>import('./add-state/add-state.module').then((m)=>m.AddStateModule),
+       },
     ]
   }
 ];
