@@ -5,7 +5,8 @@ const routes: Routes = [
   
   {
     path:'manegment',
-    loadChildren:()=>import('./manegment/manegment.module').then((m)=>m.ManegmentModule),
+    loadChildren:()=>import('./manegment/manegment.module').then((m)=>m.ManegmentModule
+    ),
   },
 ];
 
