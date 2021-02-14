@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ListCityComponent implements OnInit {
 
   constructor() { }
-
+  
+  
+  
   ngOnInit(): void {
   }
 

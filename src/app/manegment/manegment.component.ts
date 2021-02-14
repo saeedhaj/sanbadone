@@ -12,7 +12,10 @@ export class ManegmentComponent implements OnInit {
   showFiller = false;
   constructor(public dialog: MatDialog) { }
   openDialog() {
-    const dialogRef = this.dialog.open(ListCityComponent);
+    const dialogRef = this.dialog.open(ListCityComponent,{
+      height: '450px',
+      width: '800px',
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

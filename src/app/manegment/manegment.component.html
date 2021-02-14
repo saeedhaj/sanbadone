@@ -2,7 +2,7 @@
     <mat-drawer-container class="example-container" autosize>
         <mat-drawer #drawer class="example-sidenav" mode="side">
             <div fxLayout="column">
-                <button mat-button (click)="openDialog()">city</button>
+                <button mat-button routerLink="/city/list-city">city</button>
                 <button mat-button>state</button>
                 <button mat-button>countriy</button>
                 <button mat-button>products</button>
@@ -13,18 +13,8 @@
             <button type="button" mat-button (click)="drawer.toggle()">
             Toggle sidenav
           </button>
+            <router-outlet></router-outlet>
         </div>
 
     </mat-drawer-container>
 </div>
-
-
-
-
-
-
-
-
-
-
-<router-outlet></router-outlet>
