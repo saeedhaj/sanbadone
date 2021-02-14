@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'list-city',
         loadChildren:()=>import('./list-city/list-city.module').then((m)=>m.ListCityModule),
       },
+      {
+        path: 'add-city',
+        loadChildren:()=>import('./add-city/add-city.module').then((m)=>m.AddCityModule),
+      },
     ]
   }
 ];
