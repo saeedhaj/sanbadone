@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ManegmentRoutingModule } from './manegment-routing.module';
 import { ManegmentComponent } from './manegment.component';
 import { CityModule } from "./city/city.module";
+import { StateModule } from "./state/state.module";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CityModule } from "./city/city.module";
   imports: [
     CommonModule,
     ManegmentRoutingModule,
-    CityModule
+    CityModule,
+    StateModule
   ],
   exports: [ManegmentComponent]
 })

@@ -15,10 +15,10 @@ const routes: Routes = [
         path: 'city',
         loadChildren:()=>import('./city/city.module').then((m)=>m.CityModule),
       },
-      // {
-      //   path: 'roles',
-      //   loadChildren:()=>import('./roles/roles.module').then((m)=>m.RolesModule),
-      // },
+      {
+        path: 'state',
+        loadChildren:()=>import('./state/state.module').then((m)=>m.StateModule),
+      },
 
       // {
       //   path: 'sponsors',
