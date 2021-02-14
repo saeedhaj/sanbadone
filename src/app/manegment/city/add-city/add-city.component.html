@@ -1,16 +1,16 @@
 <div class="app-add-city">
     <div fxLayout="row">
-        <form action="" fxLayout="column">
+        <form [formGroup]="addForm" (submit)="onSubmit()" action="" fxLayout="column">
             <mat-form-field appearance="outline">
                 <mat-label>name</mat-label>
-                <input matInput placeholder="Placeholder">
+                <input formControlName="name" matInput placeholder="Placeholder">
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <mat-label>Description</mat-label>
-                <input matInput placeholder="Placeholder">
+                <input formControlName="description" matInput placeholder="Placeholder">
             </mat-form-field>
-            <button mat-raised-button color="primary">save</button>
+            <button type="submit" mat-raised-button color="primary">save</button>
 
         </form>
     </div>

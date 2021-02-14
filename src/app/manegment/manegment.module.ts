@@ -11,11 +11,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 // import { HttpModule } from '@angular/core';
 
 const MATERIAL_MODULE=[
-  MatSidenavModule,
-  MatButtonModule,
-  MatMenuModule,
-  MatDialogModule
-];
+    MatSidenavModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatDialogModule
+];  
 
 @NgModule({
   declarations: [ManegmentComponent],

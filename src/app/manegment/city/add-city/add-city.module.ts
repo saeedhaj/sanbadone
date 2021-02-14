@@ -7,7 +7,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatButtonModule } from "@angular/material/button";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatDialogModule } from "@angular/material/dialog";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -31,6 +31,7 @@ const MATERIAL_MODULE=[
     ...MATERIAL_MODULE,
     FormsModule,
     FlexLayoutModule,
+    ReactiveFormsModule
   ]
 })
 export class AddCityModule { }
