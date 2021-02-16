@@ -10,7 +10,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule } from "@angular/forms";
-import { DataTableModule } from "src/app/data-table/data-table.module";
+import { AppCoreModule } from "src/app/core/core.module";
 
 const MATERIAL_MODULE=[
   MatSidenavModule,
@@ -27,7 +27,7 @@ const MATERIAL_MODULE=[
     ...MATERIAL_MODULE,
     FormsModule,
     FlexLayoutModule,
-    DataTableModule
+    AppCoreModule
   ]
 })
 export class ListStateModule { }

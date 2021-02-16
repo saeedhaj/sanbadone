@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { CoreRoutingModule } from './core-routing.module';
 import { CoreComponent } from './core.component';
-
+import { DataTableModule } from "./data-table/data-table.module";
 
 @NgModule({
   declarations: [CoreComponent],
   imports: [
     CommonModule,
-    CoreRoutingModule
-  ]
+    CoreRoutingModule,
+    DataTableModule
+  ] ,
+  exports: [DataTableModule] 
 })
-export class CoreModule { }
+export class AppCoreModule { }
