@@ -5,17 +5,40 @@
         height: 100%;
         border: 1px solid rgba(0, 0, 0, 0.5);
     }
-    .example-sidenav-content {}
+    .example-sidenav-content {
+        .icon-menu {
+            font-size: 2em;
+            font-weight: 600;
+        }
+    }
     .example-sidenav {
-        padding: 20px;
-        background-color: blue;
+        background-color: #212121;
         color: white;
-        .item-nav button {
-            font-size: 1.2em;
-            margin-bottom: 5px;
+        min-width: 250px;
+        max-width: 250px;
+        .item-nav-title {
+            background-color: #2f89fc;
+            font-size: 1.3em;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 30px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .item-nav {
+            font-size: 1.5em;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                background-color: #2f89fc;
+            }
         }
     }
 }

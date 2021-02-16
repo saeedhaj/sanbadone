@@ -1,17 +1,19 @@
 <div class="app-manegment">
     <mat-drawer-container class="example-container" autosize>
         <mat-drawer #drawer class="example-sidenav" mode="side">
-            <div fxLayout="column" class="item-nav">
-                <button mat-button routerLink="/city/list-city">city</button>
-                <button mat-button routerLink="/state/list-state">state</button>
-                <button mat-button>countriy</button>
-                <button mat-button>products</button>
+            <div fxLayout="column">
+                <div class="item-nav-title">ProjectName</div>
+                <a class="item-nav" routerLink="/city/list-city">city</a>
+                <a class="item-nav" routerLink="/state/list-state">state</a>
+                <a class="item-nav">countriy</a>
+                <a class="item-nav">products</a>
             </div>
         </mat-drawer>
 
         <div class="example-sidenav-content">
-            <button type="button" mat-button (click)="drawer.toggle()">
-            Toggle sidenav
+            <button type="button" mat-icon-button (click)="drawer.toggle()">
+                <mat-icon class="icon-menu">menu</mat-icon>
+
           </button>
             <router-outlet></router-outlet>
         </div>

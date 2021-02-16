@@ -1,2 +1,1 @@
-export * from './core.module';
-export * from './core.component';
+export * from './app-core.module';
