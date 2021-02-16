@@ -8,11 +8,11 @@ const routes: Routes = [
     loadChildren:()=>import('./manegment/manegment.module').then((m)=>m.ManegmentModule
     ),
   },
-  {
-    path:'core',
-    loadChildren:()=>import('./core/core.module').then((m)=>m.CoreModule
-    ),
-  },
+  // {
+  //   path:'core',
+  //   loadChildren:()=>import('./core/core.module').then((m)=>m.CoreModule
+  //   ),
+  // },
 ];
 
 @NgModule({
