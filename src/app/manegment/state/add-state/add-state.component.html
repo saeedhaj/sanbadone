@@ -1,1 +1,17 @@
-<p>add-state works!</p>
+<div class="app-add-state">
+    <div fxLayout="row">
+        <form fxLayout="column" [formGroup]="stateForm" (submit)="onSubmit()">
+            <mat-form-field appearance="outline">
+                <mat-label>name</mat-label>
+                <input matInput formControlName="name" placeholder="Placeholder">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>description</mat-label>
+                <input matInput formControlName="description" placeholder="Placeholder">
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">save</button>
+
+
+        </form>
+    </div>
+</div>
