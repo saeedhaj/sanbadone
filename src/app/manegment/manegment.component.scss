@@ -8,5 +8,14 @@
     .example-sidenav-content {}
     .example-sidenav {
         padding: 20px;
+        background-color: blue;
+        color: white;
+        .item-nav button {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
     }
 }
