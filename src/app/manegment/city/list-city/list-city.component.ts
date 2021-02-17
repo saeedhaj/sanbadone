@@ -7,6 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListCityComponent implements OnInit {
 
+  cityColumns:any[]=[
+    {
+      name:'City Name',
+      description:'description'
+    }
+  ];
+  
+  cityRows:any[]=[
+    {
+      titleName:'Theran',
+      titleFamily:'center iran'
+
+    },
+    {
+      titleName:'rey',
+      titleFamily:'jonob'
+
+    },
+    {
+      titleName:'karaj',
+      titleFamily:'garb'
+
+    },
+  ]
+  
+
   constructor() { }
   
   

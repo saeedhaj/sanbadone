@@ -7,6 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListStateComponent implements OnInit {
 
+stateColumns:any[]=[
+  {
+    name:'State Name',
+    description:'description'
+  }
+];
+stateRows:any[]=[
+  {
+    titleName:'varimin',
+    titleFamily:'fkdflsad'
+  },
+  {
+    titleName:'amol',
+    titleFamily:'fkdflsad'
+  },
+]
+
   constructor() { }
 
   ngOnInit(): void {

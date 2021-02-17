@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 
@@ -10,29 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class DataTableComponent implements OnInit {
 
 
-  items:any[]=[
-    {
-      name:'name',
-      description:'description'
-    }
-  ];
-  itemList:any[]=[
-    {
-      titleName:'ali',
-      titleFamily:'haji'
-
-    },
-    {
-      titleName:'ali',
-      titleFamily:'haji'
-
-    },
-    {
-      titleName:'ali',
-      titleFamily:'haji'
-
-    },
-  ]
+   @Input() columns:any[]=[];
+  @Input() rows:any[]=[]
   constructor() { }
 
   ngOnInit(): void {
