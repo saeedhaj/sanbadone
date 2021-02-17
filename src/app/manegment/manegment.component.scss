@@ -18,24 +18,30 @@
         max-width: 250px;
         .item-nav-title {
             background-color: #2f89fc;
-            font-size: 1.3em;
+            font-size: 18px;
+            letter-spacing: 1.2px;
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: end;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding: 10px 30px;
             margin-bottom: 20px;
             font-weight: 600;
         }
         .item-nav {
-            font-size: 1.5em;
+            position: relative;
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: end;
+            font-size: 18px;
+            text-align: center;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding: 15px 30px;
             color: white;
             text-decoration: none;
+            .icon-nav {
+                font-size: smaller;
+                margin-top: 7px;
+                margin-right: 10px;
+            }
             &:hover {
                 background-color: #2f89fc;
             }
